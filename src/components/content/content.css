@@ -1,0 +1,131 @@
+.Content {
+    position: relative;
+    z-index: 10;
+}
+.Content h1 {
+    color: #1d1d1c;
+    max-width: 557px;
+    margin: 37px 0 33px;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 70.86px;
+}
+.Content h1 b {
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+}
+.Content p {
+    max-width: 395px;
+    font-size: 16px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+.Content .PrimaryButton {    
+    background: #11253e;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    padding: 8px 26px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+.Content .SecondaryButton {    
+    background: none;
+    color: #0a2540;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+.Content .TinyArrow {
+    margin-left: 4px;
+}
+.Content .HeaderInformation {
+    display: flex;    
+    font-family: 'Montserrat';
+    max-width: 700px;
+    margin: 94px 0;
+}
+.Content .HeaderInfoBox {    
+    padding: 10px 60px;
+    border-right: 2px solid rgba(29,29,28,0.2);
+}
+.Content .HeaderInfoBox:first-child {
+    padding-left: 0;
+}
+.Content .HeaderInfoBox:last-child {
+    border-right: 0;
+}
+.Content .HeaderInfoValue {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 4px;
+}
+.Content .CardoMobile {
+    display: none;
+}
+.Radial {
+    background: url('../../images/radialblur.svg') no-repeat;
+    width: 482px;
+    height: 482px;
+    position: absolute;
+    top: 110px;
+    left: -80px;
+}
+.BigStar {
+    position: absolute;
+    top: 130px;
+    right: 45px;
+    display: none;
+}
+.SmallStar {
+    position: absolute;
+    top: 185px;
+    right: 95px;
+    display: none;
+}
+
+@media only screen and (max-width:1200px) { 
+    .BigStar, .SmallStar {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:768px) { 
+    body {
+        overflow-x: hidden;
+    }
+    .Content p {
+      margin-bottom: 36px;
+    }
+    .Content .HeaderButtons a {
+        padding: 8px 18px;
+    }
+    .Content .HeaderInformation {
+        margin: 43px 0;
+    }
+    .Content .HeaderInfoBox {    
+        padding: 5px 8%;        
+    }
+    .Content .HeaderInfoLabel {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .Content .HeaderInfoValue {
+        font-size: 18px;
+    }
+    .Content .CardoMobile {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:368px) { 
+    .Content .HeaderInfoBox {    
+        padding: 5px 15px;        
+    }
+}

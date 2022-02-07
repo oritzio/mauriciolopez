@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Sora:wght@200;400;700&display=swap');
+
+body {
+  font-family: 'Open Sans';
+}
+a { 
+  display: inline-block;
+}
+h1, h2 {
+  font-family: 'Cormorant Garamond';
+}
+.Header {
+  background: url('./images/header.png') no-repeat top right;
+}
+.Row { 
+  flex-wrap: wrap;
+  padding: 0 25px;
+}
+.MobileMenu {
+  display: none;
+}
+
+@media only screen and (max-width:1200px) {
+  .Header {
+    background:none;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .Row .Col {
+    flex: auto;
+  }
+  .Nav {
+    padding: 35px 0 80px;
+  } 
+  .Menu {
+    display: none;
+  }
+  .MobileMenu {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    padding: 8px;
+  }
+}

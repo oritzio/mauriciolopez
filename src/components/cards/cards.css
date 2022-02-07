@@ -1,0 +1,55 @@
+.SectionCards {
+    background: #1d1d1c;
+    color: #fff;
+    padding-bottom: 60px;
+}
+.SectionCards .Col {
+    flex-grow:1;
+    flex-basis:33.3%;
+}
+.SectionCards h2 {
+    margin-top: 100px;
+    font-size: 65px;
+    font-weight: 500;
+}
+.Card {
+    background: #181818;    
+    padding: 36px;
+    margin-right: 33px;
+    margin-bottom: 40px;   
+}
+.Card h3 { 
+    font: 500 36px 'Cormorant Garamond';
+    margin-top: 0;
+}
+.Card p { 
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;    
+}
+.Card a {     
+    color: #fff;
+    background: #a5afd4;
+    font-size: 15px;
+    border-radius: 100px;
+    padding: 8px 28px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1200px) {    
+    .SectionCards .Col {
+        flex-basis:50%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .SectionCards h2 {
+        font-size: 48px;
+        margin-top: 60px;
+    }
+    .Card {
+        margin-right: 0;
+    }
+}
